@@ -18,10 +18,12 @@
 #
 
 include_recipe "build-essential"
-include_recipe "cmake"
+#include_recipe "cmake"
 include_recipe "xml::default"
 
 install_path = "/usr/local/include/collada-dom2.4/dom.h"
+
+package "cmake"
 
 remote_file "#{Chef::Config[:file_cache_path]}/collada-dom-#{node["collada-dom"]["version"]}.tgz" do
   source "http://downloads.sourceforge.net/project/collada-dom/Collada%20DOM/Collada%20DOM%202.4/collada-dom-#{node["collada-dom"]["version"]}.tgz"
