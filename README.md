@@ -3,12 +3,14 @@ collada-dom Cookbook
 
 This cookbook will install collada-dom library.
 
+[![Build Status](http://ci.devrt.tk/job/chef-collada-dom/badge/icon)](http://ci.devrt.tk/job/chef-collada-dom/)
+
 Requirements
 ------------
 
 - `build-essential` - collada-dom requires c++ compiler.
-- `cmake` - collada-dom requires omniORB.
-- `xml` - collada-dom requires OpenRTM-aist.
+- `cmake` - collada-dom requires cmake.
+- `xml` - collada-dom requires libxml.
 
 Attributes
 ----------
